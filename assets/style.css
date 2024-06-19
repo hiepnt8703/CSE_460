@@ -25,3 +25,30 @@
     padding-left: 40px !important;
     padding-right: 40px !important;
 }
+
+footer{
+    padding: 40px 0px 80px 0px;
+    background-color: black;
+    color: white;
+}
+
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.icon {
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    
+}
+
+.center{
+    padding-right: 80px;
+}
