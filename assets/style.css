@@ -5,9 +5,16 @@
 }
 
 
+:root {
+    --space-14: calc(var(--scale-unit)*0.875);
+}
+
+.navbar{
+    border-bottom: 2px solid #E57905;
+}
 
 .navbar-brand {
-    margin-left: 40px;
+    margin-left: 200px;
     color: black;
     font-weight: 600;
     font-size: 25px !important;
@@ -19,9 +26,95 @@
     font-weight: 500;
     padding-left: 15px !important;
     padding-right: 15px !important;
+    text-shadow: 10px;
+    font-size: var(--space-14) !important;
 }
 
 .search-form {
     padding-left: 40px !important;
     padding-right: 40px !important;
+}
+
+.box {
+    height: 460px;
+    width: 500px;
+    background-image: url(../anh/denda.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 40px 0 50px 75px;
+}
+
+
+.main .information-right{
+    margin-top: 100px;
+    
+}
+
+.main .information-right h3{
+    margin: 10px 0 10px 0;
+    
+}
+
+.main .information-right h5 {
+    color: #E57905;
+    font-size: 15dp;
+}
+
+.btnsize1 {
+    height: 50px;
+    width: 100px;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    margin: 20px 10px 40px 0;
+}
+
+.btnsize2 {
+    height: 50px;
+    width: 300px;
+    background-color: #E57905;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.selected {
+    background-color: #E57905;
+    color: white;
+}
+
+.description h4{
+    margin-left: 75px;
+    margin-right: 15px;
+}
+.description p{
+    margin-left: 75px;
+    margin-right: 15px;
+}
+
+footer{
+    padding: 40px 0px 80px 0px;
+    background-color: black;
+    color: white;
+}
+
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.icon {
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    
+}
+
+.center{
+    padding-right: 80px;
 }
