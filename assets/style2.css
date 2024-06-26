@@ -1,0 +1,75 @@
+/* Đặt lại các thuộc tính mặc định */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Biến toàn cục */
+:root {
+    --space-14: calc(var(--scale-unit) * 0.875);
+}
+
+/* Kiểu dáng cho navbar */
+.navbar {
+    background-color: #E57905;
+}
+
+.navbar-brand {
+    margin-left: 200px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 400;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.search-form {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+
+.box1 {
+    height: 250px;
+    width: 250px;
+    background-image: url(../anh/denda.jpg);
+    background-size: 100%;
+}
+
+.product p {
+    color: #00000099;
+}
+
+/* Kiểu dáng cho footer */
+footer {
+    padding: 40px 0 80px 0;
+    background-color: black;
+    color: white;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.icon {
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    padding-right: 80px;
+}

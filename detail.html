@@ -34,8 +34,8 @@
                             <a class="nav-link" href="#">Giỏ hàng</a>
                         </li>
                     </ul>
-                    <form class="d-flex search-form" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                    <form class="d-flex search-form" role="search" id="search-form">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm" id="search-input">
                         <button class="btn btn-primary" type="submit">Search</button>
                     </form>
                 </div>
@@ -54,9 +54,9 @@
             <div class="col-6 information-right">
                 <h3>Cà phê đen đá</h3>
                 <h5>29.000 VND</h5>
-                <form action="">
-                    <button type="button" class="btnsize1">Size L</button>
-                    <button type="button" class="btnsize1">Size M</button>
+                <form id="size-form">
+                    <button type="button" class="btnsize1" data-size="L">Size L</button>
+                    <button type="button" class="btnsize1" data-size="M">Size M</button>
                 </form>
                 <button type="button" class="btnsize2" id="add-to-cart">Thêm vào giỏ hàng</button>
             </div>
