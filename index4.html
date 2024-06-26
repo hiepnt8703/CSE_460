@@ -6,21 +6,43 @@
     <title>The Coffee Days</title>
     <!-- Liên kết file CSS -->
     <link rel="stylesheet" href="css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 <body>
-    <header>
-        <h1>The Coffee Days</h1>
-        <nav>
-            <a href="">Cà phê</a>
-            <a href="#">Trà</a>
-            <a href="#">Menu</a>
-            <a href="#">Chuyện nhà</a>
-            <a href="#">Cảm hứng</a>
-            <a href="#">Giỏ hàng</a>
-            <input type="text" placeholder="Tìm kiếm">
-            <button>Tìm kiếm</button>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="tc.html">The Coffee Days</a>
+            <div class="nav-right">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cà phê</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trà</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chuyện nhà</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cảm hứng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giỏ hàng</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex search-form" role="search" id="search-form">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm" id="search-input">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="vertical-menu">
             <a href="#" class="active">Cà phê</a>
@@ -61,6 +83,8 @@
     </div>
     </div>   
     <!-- Liên kết file JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
