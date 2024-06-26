@@ -37,3 +37,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+
+// search
+
+document.addEventListener('DOMContentLoaded', function () {
+    const box1 = document.querySelector('.box1');
+    
+    box1.addEventListener('click', function () {
+        window.location.href = 'detail.html';
+    });
+});
