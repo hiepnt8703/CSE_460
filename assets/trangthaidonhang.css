@@ -1,0 +1,188 @@
+header {
+    background-color: #ff9800;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.Menu a {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.Menu input {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.Menu button {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background-color: #ffffff;
+}
+
+.card {
+    width: 1000px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.info .left p {
+    margin-bottom: 5px;
+}
+
+.info .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.info .right p {
+    margin-bottom: 5px;
+}
+
+.payment {
+    margin-bottom: 20px;
+}
+
+.payment .method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment .method img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.payment .status {
+    display: flex;
+    align-items: center;
+}
+
+.payment .status input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.total {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.total p {
+    margin-bottom: 5px;
+}
+
+.button {
+    
+    width: 200px;
+    margin: 10px;
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.button2 {
+    width: 200px;
+    margin: 10px;
+    background-color: #807e7c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ff6f00;
+}
+.navbar {
+    border-bottom: 2px solid #E57905;
+}
+
+.navbar-brand {
+    margin-left: 200px;
+    color: black;
+    font-weight: 600;
+    font-size: 25px !important;
+}
+
+.nav-link {
+    color: black !important;
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.search-form {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}

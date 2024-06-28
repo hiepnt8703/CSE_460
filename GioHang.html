@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Days</title>
+    <link rel="stylesheet" href="assets/GioHang.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<body>
+    <nav class="navbar navbar-expand-lg p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="tc.html">The Coffee Days</a>
+
+            <div class="nav-right">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cà phê</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trà</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chuyện nhà</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cảm hứng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GioHang.html">Giỏ hàng</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex search-form" role="search" id="search-form">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm" id="search-input">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h2>Giao Hàng</h2>
+            <div>
+                <span class="cart-icon">&#128204;</span> Khu 5, Thôn Do Hạ, Xã Tiền Phong, Huyện Mê Linh, Thành Phố Hà Nội
+                <button>Đổi địa chỉ</button>
+            </div>
+            <p>Nhận hàng trong 15-30 phút</p>
+            <div class="GiaoHang">
+                
+                <input type="text" placeholder="Nhập tên người nhận...">
+                <input type="text" placeholder="Nhập số điện thoại...">
+                <input type="text" placeholder="Thêm ghi chú giao hàng...">
+            </div>
+            <h2>Phương Thức Thanh Toán</h2>
+            <div class="payment-options">
+                <div class="payment-option">
+                    <input type="radio" name="payment" checked>
+                    <img src="anh/tienmat.png" alt="Tiền mặt">
+                    Tiền mặt
+                </div>
+                <div class="payment-option">
+                    <input type="radio" name="payment">
+                    <img src="anh/momo.png" alt="MoMo">
+                    MoMo
+                </div>
+                <div class="payment-option">
+                    <input type="radio" name="payment">
+                    <img src="anh/zalopay.png" alt="ZaloPay">
+                    ZaloPay
+                </div>
+                <div class="payment-option">
+                    <input type="radio" name="payment">
+                    <img src="anh/thetindung.png" alt="Thẻ ngân hàng">
+                    Thẻ ngân hàng
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="Order_trai">
+                <h2>Các món đã chọn</h2>
+                <div class="order-item">
+                    <img src="anh/trasuadau.png" alt="Dâu sữa phô mai">
+                    <div class="details">
+                        <p>1x Dâu Sữa Phô Mai Tươi</p>
+                        <p>Trân châu đen</p>
+                        <p>50% đá 70% đường</p>
+                    </div>
+                    <div class="price">
+                        45.000₫
+                    </div>
+                    <span class="edit-icon">&#128221;</span>
+                </div>
+                <div class="order-item">
+                    <img src="anh/trasuamangcau.png"alt="Mãng cầu phô mai">
+                    <div class="details">
+                        <p>2x Mãng Cầu Phô Mai Tươi</p>
+                        <p>Trân châu đen</p>
+                        <p>50% đá 70% đường</p>
+                    </div>
+                    <div class="price">
+                        90.000₫
+                    </div>
+                    <span class="edit-icon">&#128221;</span>
+                </div>
+                <div class="total">
+                    <h3>Tổng Cộng</h3>
+                    <p class="price">135.000₫</p>
+                    <p>Phí giao hàng: 23.000₫</p>
+                    <p class="price">158.000₫</p>
+                    <button class="btn-order" onclick="openModal()">ĐẶT HÀNG</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>XÁC NHẬN ĐƠN HÀNG</h2>
+                <p>Địa Chỉ Nhận : Khu 5, Thôn Do Hạ, Xã Tiền Phong,
+                    Huyện Mê Linh, Thành Phố Hà Nội</p>
+                <p>Phương Thức Thanh Toán: MOMO</p>
+                <button  class="btn-order" onclick="confirmOrder()">XÁC NHẬN</button>
+                <button  class="btn-order2" onclick="closeModal()">THAY ĐỔI THÔNG TIN</button>
+            </div>
+        </div>
+        
+        <script>
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
+        
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+        
+            function confirmOrder() {
+                // Close the modal
+                closeModal();
+        
+                // Open a new webpage
+                window.open('congthanhtoan.html', '_blank');
+            }
+        </script>
+    </main>
+</body>
+</html>
